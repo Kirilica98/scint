@@ -1,0 +1,20 @@
+## Particle type, position, energy...
+/control/verbose 2
+/run/verbose 2
+#
+/gps/particle opticalphoton
+/gps/number 1
+/gps/pos/centre  0 0 0 cm
+/gps/energy 4.74 eV
+/gps/polarization 0 0 1
+#/gps/direction 1 1 0
+
+/gps/ang/type iso
+/gps/ang/mintheta 0 deg
+/gps/ang/maxtheta 12 deg
+
+
+/process/inactivate Cerenkov
+
+## Number of events to run
+/run/beamOn 10
